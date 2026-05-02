@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Pastel Tarot プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #fdf8f3;
+      --paper: #ffffff;
+      --ink: #3a2e2a;
+      --accent: #8b5a2b;
+      --muted: #7a6e6a;
+      --line: #e6dccc;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      background: var(--paper);
+      box-shadow: 0 4px 24px rgba(139, 90, 43, 0.08);
+    }
+    h1 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f6efe5;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    li {
+      margin: 6px 0;
+    }
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      main { padding: 24px 16px 64px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+      table { font-size: 0.88rem; }
+      th, td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pastel Tarot プライバシーポリシー</h1>
+
+    <p class="meta">最終改定日: 2026-05-01</p>
+    <p class="meta">発行者: kosuga shun</p>
+    <p class="meta">連絡先: <a href="mailto:mieruyorara5@gmail.com">mieruyorara5@gmail.com</a></p>
+
+    <p>
+      「Pastel Tarot」（以下「本アプリ」）は、利用者のプライバシーを尊重し、以下の方針で情報を取り扱います。
+    </p>
+
+    <h2>1. 取得する情報</h2>
+
+    <h3>1-1. 匿名認証ID</h3>
+    <p>Supabase 匿名認証によって自動付与される一意の識別子です。氏名・メールアドレス・電話番号等の個人情報は取得しません。</p>
+
+    <h3>1-2. 占い履歴</h3>
+    <p>占い結果（カード組み合わせ・スプレッド種別・任意で入力された質問文）を、原則として端末内 (AsyncStorage) に保存します。匿名認証が確立している場合に限り、Supabase の <code>readings</code> テーブルにバックアップ目的で同期されます。</p>
+
+    <h3>1-3. 課金情報</h3>
+    <p>「Pastel Tarot プラス」を購入された場合、RevenueCat および各ストア（Apple / Google Play）が課金情報を処理します。本アプリは決済カード番号や請求先住所を取得しません。</p>
+
+    <h3>1-4. 広告 ID</h3>
+    <p>無料利用時、Google AdMob が広告 ID 等を処理します。利用者は端末設定からオプトアウトが可能です。プレミアム購入後は広告が表示されないため、これらの送信もありません。</p>
+
+    <h2>2. 情報の利用目的</h2>
+    <ul>
+      <li>占い履歴の保存および機種変更時の引き継ぎ</li>
+      <li>アプリ内課金の処理および権限の付与</li>
+      <li>無料利用時の広告配信</li>
+    </ul>
+
+    <h2>3. 第三者への提供</h2>
+    <table>
+      <thead>
+        <tr><th>提供先</th><th>提供内容</th><th>目的</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Supabase Inc.</td><td>匿名認証ID・占い履歴</td><td>バックエンド・履歴クラウド保存</td></tr>
+        <tr><td>RevenueCat, Inc.</td><td>匿名認証ID・購入情報</td><td>買切購入の権限管理</td></tr>
+        <tr><td>Apple / Google Play</td><td>課金情報</td><td>アプリ内課金処理</td></tr>
+        <tr><td>Google AdMob</td><td>広告 ID 等</td><td>広告配信（無料利用時のみ）</td></tr>
+      </tbody>
+    </table>
+
+    <p>各社のプライバシーポリシー:</p>
+    <ul>
+      <li>Supabase: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+      <li>RevenueCat: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+      <li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+      <li>AdMob: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+    </ul>
+
+    <h2>4. データの保管期間</h2>
+    <p>端末内データ: 利用者が削除するまで</p>
+    <p>クラウドデータ: 利用者が「履歴をすべて削除」を実行するか、アプリのアカウントを削除するまで</p>
+
+    <h2>5. データの削除リクエスト</h2>
+    <p>設定画面の「履歴をすべて削除」を実行すると、端末内およびクラウド上の占い履歴が削除されます。アカウント自体の削除をご希望の場合、上記連絡先までご連絡ください。</p>
+
+    <h2>6. 子どもの利用</h2>
+    <p>本アプリは13歳未満の利用を想定していません。13歳未満の方は保護者の同意を得てご利用ください。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>プライバシーに関するお問い合わせは下記までご連絡ください。</p>
+    <ul>
+      <li>メール: <a href="mailto:mieruyorara5@gmail.com">mieruyorara5@gmail.com</a></li>
+    </ul>
+
+    <h2>8. 改定について</h2>
+    <p>本ポリシーは必要に応じて改定されます。重要な変更がある場合はアプリ内で通知します。</p>
+  </main>
+
+  <footer>
+    &copy; 2026 kosuga shun. All rights reserved.
+  </footer>
+</body>
+</html>
