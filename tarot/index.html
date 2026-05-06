@@ -8,7 +8,7 @@
   <style>
     :root {
       --bg: #fdf8f3;
-      --paper: #ffffff;
+      --paper: rgba(255, 251, 240, 0.93);
       --ink: #3a2e2a;
       --accent: #8b5a2b;
       --muted: #7a6e6a;
@@ -18,19 +18,30 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: var(--bg);
       color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
                    "Yu Gothic", "Meiryo", sans-serif;
       line-height: 1.8;
       font-size: 16px;
     }
+    body {
+      background-color: var(--bg);
+      background-image: url("./bg.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
     main {
       max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 96px;
+      margin: 32px auto;
+      padding: 48px 32px 64px;
       background: var(--paper);
-      box-shadow: 0 4px 24px rgba(139, 90, 43, 0.08);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(80, 50, 30, 0.18);
     }
     h1 {
       font-size: 1.75rem;
@@ -91,7 +102,8 @@
       text-align: center;
     }
     @media (max-width: 600px) {
-      main { padding: 24px 16px 64px; }
+      body { background-attachment: scroll; }
+      main { margin: 16px; padding: 32px 20px 56px; }
       h1 { font-size: 1.4rem; }
       h2 { font-size: 1.1rem; }
       table { font-size: 0.88rem; }
