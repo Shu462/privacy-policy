@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>ポイ守り プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #fffdf6;
+      --paper: #ffffff;
+      --ink: #463f35;
+      --accent: #e07e14;
+      --muted: #8a8270;
+      --line: #f0e9d8;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      background: var(--paper);
+      box-shadow: 0 4px 24px rgba(150, 110, 50, 0.10);
+    }
+    h1 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    a { color: var(--accent); text-decoration: underline; }
+    ul { padding-left: 1.5em; }
+    li { margin: 6px 0; }
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      main { padding: 24px 16px 64px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ポイ守り プライバシーポリシー</h1>
+
+    <p class="meta">最終改定日: 2026-06-02</p>
+    <p class="meta">発行者: kosuga shun</p>
+    <p class="meta">連絡先: <a href="mailto:mieruyorara5@gmail.com">mieruyorara5@gmail.com</a></p>
+
+    <p>
+      「ポイ守り」（以下「本アプリ」）は、利用者のプライバシーを最優先します。本アプリは
+      利用者の個人情報を一切取得せず、すべてのデータを端末内にのみ保存します。
+    </p>
+
+    <h2>1. 取得する情報</h2>
+    <p>
+      本アプリは、氏名・メールアドレス・電話番号・位置情報などの個人情報を一切取得しません。
+      利用者が入力したポイント名・残高・有効期限・メモ・カテゴリ等のデータは、すべて端末内
+      （AsyncStorage）にのみ保存され、開発者や第三者のサーバーに送信されることはありません。
+    </p>
+
+    <h2>2. 情報の利用目的</h2>
+    <ul>
+      <li>登録したポイント情報の端末内での表示・並び替え</li>
+      <li>有効期限の失効リマインダー（ローカル通知）の生成</li>
+    </ul>
+
+    <h2>3. 第三者への提供</h2>
+    <p>
+      本アプリは外部サーバーと通信せず、第三者へのデータ提供・販売・共有を一切行いません。
+      解析ツール（アナリティクス）、広告 SDK、トラッキング技術も使用していません。
+    </p>
+
+    <h2>4. 端末の権限</h2>
+    <p>
+      本アプリは、失効リマインダーのために「通知」権限を使用する場合があります。通知はすべて
+      端末内で生成されるローカル通知であり、外部送信は伴いません。通知は端末またはアプリ内の
+      設定からいつでも無効にできます。
+    </p>
+
+    <h2>5. データの保管期間と削除</h2>
+    <p>
+      登録データは利用者が削除するまで端末内に保管されます。アプリ内の「設定 →
+      すべてのデータを削除」からいつでも完全に削除できます。また、本アプリをアンインストール
+      すると、端末内のすべてのデータが削除されます。
+    </p>
+
+    <h2>6. 子どもの利用</h2>
+    <p>
+      本アプリは個人情報を取得しないため、年齢を問わず安心してご利用いただけます。お子様から
+      個人情報を収集することはありません。
+    </p>
+
+    <h2>7. お問い合わせ</h2>
+    <ul>
+      <li>メール: <a href="mailto:mieruyorara5@gmail.com">mieruyorara5@gmail.com</a></li>
+    </ul>
+
+    <h2>8. 改定について</h2>
+    <p>本ポリシーは必要に応じて改定されます。重要な変更がある場合は本ページにて告知します。</p>
+  </main>
+
+  <footer>
+    &copy; 2026 kosuga shun. All rights reserved.
+  </footer>
+</body>
+</html>
